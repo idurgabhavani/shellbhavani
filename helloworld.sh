@@ -1,5 +1,9 @@
 #!/bin/bash
-p1=$1
-p2=$2
-sum=$(($1 + $2))
-echo "total sum=$sum"
+
+echo " please enter numner1 "
+read x
+echo " please enter number2 "
+read y
+echo " sum of the two numers is "
+sum=$(($x+$y))
+echo " total sum= $sum "
