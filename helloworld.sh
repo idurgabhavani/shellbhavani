@@ -1,3 +1,5 @@
 #!/bin/bash
-echo "hello bhavani"
-echo "yeah bhavani tell me "
+p1=$1
+p2=$2
+sum=$(($1+$2))
+echo"total sum=$sum"
