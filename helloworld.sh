@@ -7,3 +7,5 @@ read y
 echo " sum of the two numers is "
 sum=$(($x+$y))
 echo " total sum= $sum "
+echo "how many args passed : $# "
+echo "all args passed : $@ "
