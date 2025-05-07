@@ -2,7 +2,9 @@
 
 ID=$(id -u)
 TIMESTAMP=$(date +%F-%H-%M-%S)
-
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 LOGFILE="tmp/$0-$TIMESTAMP.log"
 echo "script name : $0 "
 
@@ -11,10 +13,10 @@ VALIDATE(){
 
     if [ $1 -ne 0 ]
     then
-        echo "$2  is failed "
+        echo "$2  is $G failed "
         exit 1
     else
-        echo "$2   is success"
+        echo "$2   is  success"
     fi
 
 }
