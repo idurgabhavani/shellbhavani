@@ -21,7 +21,7 @@ then
     echo " ERROR: please run this script with root access 4N"
     exit 1
 else
-    echo "you are not root  user"
+    echo "you are  root  user"
 fi
 
 #echo " all argumaents passed : $@ "
