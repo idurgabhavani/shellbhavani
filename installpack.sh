@@ -35,4 +35,5 @@ do
         VALIDATE $? "installation of $package "
     else
         echo "$package is already INSALLED .. $Y skipping"
+    fi
 done
