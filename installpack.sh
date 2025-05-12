@@ -18,7 +18,7 @@ VALIDATE(){
 
 if [ $ID ne 0 ]
 then
-    echo -e " ERROR: please run this script with root access 4N"
+    echo " ERROR: please run this script with root access 4N"
     exit 1
 else
     echo "you are not root  user"
@@ -34,5 +34,5 @@ do
         yum insall $package -y
         VALIDATE $? "installation of $package "
     else
-        echo -e "$package is already INSALLED .. $Y skipping"
+        echo "$package is already INSALLED .. $Y skipping"
 done
