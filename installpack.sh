@@ -13,7 +13,6 @@ VALIDATE(){
         echo -e "FAIELD"
     else
         echo -e "SUCCESS"
-
 }
 
 if [ $ID ne 0 ]
