@@ -1,0 +1,13 @@
+- name: variables from prompt
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    prompt: please enter ur user name
+    private: false #user can see what they are enterting
+  - name: PASSWORD
+    prompt: please enter passswors
+    private: true #user can't see what we entering
+  tasks:
+  - name: print and check the variables
+    ansibe.builtin.debug:
+      msg: "username is {{USERNAME}} and password {{PASSWORD}}"
